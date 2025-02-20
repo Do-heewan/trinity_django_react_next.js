@@ -1,0 +1,4 @@
+# Node.js 프로젝트
+node_modules/
+npm-debug.log
+yarn-error.log
