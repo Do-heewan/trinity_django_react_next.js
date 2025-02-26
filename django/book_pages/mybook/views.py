@@ -1,21 +1,21 @@
 from django.shortcuts import render, redirect
+
 from .forms import BookForm
 from .models import Book
 
-# Create your views here.
+from .serializers import BookSerializer
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+
+@api_view(["POST"])
 def create_book(request):
-    if (request.method == "POST"):
-        form = BookForm(request.POST)
+    serializer = BookSerializer(data=request.data)
+    if (serializer.is_valid()):
+        serializer.save()
 
-        if (form.is_valid()):
-            form.save()
+        return Response(serializer.data, status = 201)
 
-            return redirect("book_list")
-    
-    else:
-        form = BookForm()
-
-    return render(request, "mybook/create_book.html", {"form" : form})
+    return Response(serializer.errors, status = 400)
 
 def book_list(request):
     books = Book.objects.all()
