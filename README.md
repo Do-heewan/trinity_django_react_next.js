@@ -1,4 +1,4 @@
-# Trininy  ![django](https://img.shields.io/badge/django-092E20?style=flat-square&logo=django&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white)![next.js](https://img.shields.io/badge/next.js-000000?style=flat-square&logo=next.js&logoColor=white)
+# 삼위일체  ![django](https://img.shields.io/badge/django-092E20?style=flat-square&logo=django&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=white)![next.js](https://img.shields.io/badge/next.js-000000?style=flat-square&logo=next.js&logoColor=white)
 
 ## 📌 소개
 이 레포지토리는 Django, React, Next.js를 활용하여 풀스택 개발을 공부한 내용을 정리하고 공유하는 공간입니다. 백엔드와 프론트엔드를 함께 다루며, 학습 과정에서 배운 개념, 예제 코드, 프로젝트 등을 기록합니다.
